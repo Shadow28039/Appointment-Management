@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="301.0" style="-fx-background-color: tan;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.TimeZoneController">
+   <children>
+      <Line endX="213.0" layoutX="115.0" layoutY="46.0" startX="-115.0" />
+      <Text layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TimeZone Information Change:" underline="true" wrappingWidth="329.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="11.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Changes to TimeZone Information Are only Visual all Information in regards to Time and Date are recorded in World Time Format:" wrappingWidth="286.13671875" />
+      <Button layoutX="24.0" layoutY="145.0" mnemonicParsing="false" onAction="#CT" text="Central TimeZone" />
+      <Button layoutX="22.0" layoutY="192.0" mnemonicParsing="false" onAction="#PT" prefHeight="25.0" prefWidth="110.0" text="Pacific TimeZone" />
+      <Button layoutX="164.0" layoutY="145.0" mnemonicParsing="false" onAction="#MT" text="Mountain TimeZone" />
+      <Button layoutX="164.0" layoutY="192.0" mnemonicParsing="false" onAction="#ET" prefHeight="25.0" prefWidth="124.0" text="Eastern TimeZone" />
+      <Button layoutX="262.0" layoutY="251.0" mnemonicParsing="false" onAction="#Cancel" text="Cancel" />
+   </children>
+</AnchorPane>
