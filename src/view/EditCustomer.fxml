@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: tan;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditCustomerController">
+   <children>
+      <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Customer:" wrappingWidth="226.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Line endX="584.5" layoutX="14.0" layoutY="33.0" startX="-14.0" />
+      <Text layoutX="14.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name:" wrappingWidth="174.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="CustomerNameField" layoutX="225.0" layoutY="69.0" prefHeight="25.0" prefWidth="207.0" promptText="FirstName LastName" />
+      <Text layoutX="11.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is this Customer Currently Active:" wrappingWidth="232.13671875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="RadioButtonActive" layoutX="247.0" layoutY="316.0" mnemonicParsing="false" onAction="#ActiveCustomer" text="Yes" underline="true">
+         <toggleGroup>
+            <ToggleGroup fx:id="ActiveGroup" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="RadioButtonNonActive" layoutX="291.0" layoutY="316.0" mnemonicParsing="false" onAction="#NonActiveCustomer" text="No" toggleGroup="$ActiveGroup" underline="true" />
+      <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#Cancel" text="Cancel" />
+      <Button layoutX="479.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnActionSave" prefHeight="25.0" prefWidth="52.0" text="Save" />
+      <Text layoutX="17.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="158.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="CustomerAddressField" layoutX="225.0" layoutY="106.0" prefHeight="25.0" prefWidth="121.0" promptText="address" />
+      <Text layoutX="17.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zipcode:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ZipcodeField" layoutX="225.0" layoutY="136.0" prefHeight="25.0" prefWidth="207.0" promptText="+++++" />
+      <Text layoutX="17.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="PhoneNumberField" layoutX="225.0" layoutY="167.0" prefHeight="25.0" prefWidth="207.0" promptText="***-***-****" />
+      <TextField fx:id="CustomerAddress2Field" layoutX="349.0" layoutY="106.0" prefHeight="25.0" prefWidth="83.0" promptText="address2" />
+      <Text layoutX="17.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="CityField" layoutX="225.0" layoutY="204.0" prefHeight="25.0" prefWidth="207.0" promptText="lowercase" />
+      <Text layoutX="14.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID :" wrappingWidth="174.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="CustomerIDField" layoutX="225.0" layoutY="36.0" text="Label">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

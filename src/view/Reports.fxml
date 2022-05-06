@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="428.0" style="-fx-background-color: tan;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+   <children>
+      <Label layoutY="14.0" prefHeight="32.0" prefWidth="180.0" text="Reports Page:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Line endX="372.5" layoutX="53.0" layoutY="46.0" startX="-53.0" />
+      <Button layoutX="306.0" layoutY="61.0" mnemonicParsing="false" onAction="#callMonthreportType" text="CLICK" />
+      <Button layoutX="304.0" layoutY="107.0" mnemonicParsing="false" onAction="#CallMonthReport" text="CLICK" />
+      <Label layoutX="4.0" layoutY="65.0" prefHeight="17.0" prefWidth="295.0" text="NUMBER OF APPOINTMENTS BY MONTH:" />
+      <Label layoutX="4.0" layoutY="111.0" prefHeight="17.0" prefWidth="295.0" text="NUMBER OF APPOINTMENT TYPES BY MONTH:" />
+      <Button layoutX="362.0" layoutY="14.0" mnemonicParsing="false" onAction="#MAINPAGE" text="MAIN" />
+      <TextArea layoutX="14.0" layoutY="207.0" prefHeight="243.0" prefWidth="399.0" />
+      <Label fx:id="textprompt1" layoutX="17.0" layoutY="299.0" prefHeight="17.0" prefWidth="302.0" />
+      <Label fx:id="textvalue1" layoutX="337.0" layoutY="299.0" />
+      <Line endX="313.0" layoutX="115.0" layoutY="198.0" startX="-115.0" />
+      <Label fx:id="forThemonthOf" layoutX="15.0" layoutY="224.0" prefHeight="17.0" prefWidth="399.0" />
+      <Label fx:id="textprompt2" layoutX="18.0" layoutY="377.0" prefHeight="17.0" prefWidth="302.0" />
+      <Label fx:id="textvalue2" layoutX="337.0" layoutY="377.0" />
+   </children>
+</AnchorPane>
